@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using PruebaTecnicaAlerium.Utilities;
 
 namespace PruebaTecnicaAlerium.Models
 {
@@ -19,6 +20,7 @@ namespace PruebaTecnicaAlerium.Models
         [MaxLength(3)]
         public string Unidad { get; set; }
         [Required]
+        [RegularExpression(RegularExpressions.Decimal, ErrorMessage = "El campo Costo debe ser un número decimal válido.")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Costo { get; set; }
         [ForeignKey("IdProveedor")]

@@ -68,3 +68,4 @@ C:\Users\rogelio\Documents\Github\PruebaTecnicaAlerium\bin\Debug\net8.0\runtimes
 C:\Users\rogelio\Documents\Github\PruebaTecnicaAlerium\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\rogelio\Documents\Github\PruebaTecnicaAlerium\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\rogelio\Documents\Github\PruebaTecnicaAlerium\obj\Debug\net8.0\PruebaTe.9A4CFE45.Up2Date
+C:\Users\rogelio\Documents\Github\PruebaTecnicaAlerium\obj\Debug\net8.0\PruebaTecnicaAlerium.sourcelink.json

@@ -1,4 +1,4 @@
 INSERT INTO Requisiciones (NumRequisicion, FechaCreacion, Solicitante, Observaciones, Estatus, Revisada) VALUES 
-('REQ001', '2024-07-01', 'Juan P閞ez', 'Requisici髇 para equipo de oficina', 1, 1),
-('REQ002', '2024-07-05', 'Ana L髉ez', 'Requisici髇 para suministros de limpieza', 1, 0),
-('REQ003', '2024-06-15', 'Carlos G髆ez', 'Requisici髇 para materiales de construcci髇', 2, 1);
+('REQ001', '2024-07-01', 'Juan P茅rez', 'Requisici贸n para equipo de oficina', 1, 1),
+('REQ002', '2024-07-05', 'Ana L贸pez', 'Requisici贸n para suministros de limpieza', 1, 0),
+('REQ003', '2024-06-15', 'Carlos G贸mez', 'Requisici贸n para materiales de construcci贸n', 1, 1);

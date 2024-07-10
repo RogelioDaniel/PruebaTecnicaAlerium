@@ -28,6 +28,14 @@ namespace PruebaTecnicaAlerium.Controllers
         {
             if (ModelState.IsValid)
             {
+                var existingSupplier = await _context.Productos
+                   .FirstOrDefaultAsync(s => s.Codigo == product.Codigo);
+                if (existingSupplier != null)
+                {
+                    ModelState.AddModelError("Codigo", "Ya existe un producto con este código.");
+                    TempData["ErrorMessage"] = "Error: Ya existe un producto con este código.";
+                    return View(product);
+                }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Details", "Proveedores", new { id = product.IdProveedor });

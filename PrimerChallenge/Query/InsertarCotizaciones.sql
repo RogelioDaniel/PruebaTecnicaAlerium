@@ -1,4 +1,4 @@
 INSERT INTO Cotizaciones (NumCotizacion, idRequisicion, idProveedor, Observaciones, Cancelada, SubTotal, IVA, Total) VALUES 
-('COT001', 1, 1, 'Cotizaci髇 de equipo de oficina', 0, 1000.00, 160.00, 1160.00),
-('COT002', 2, 2, 'Cotizaci髇 de suministros de limpieza', 0, 500.00, 80.00, 580.00),
-('COT003', 3, 3, 'Cotizaci髇 de materiales de construcci髇', 1, 2000.00, 320.00, 2320.00);
+('COT001', 1, 1, 'Cotizaci贸n de equipo de oficina', 0, 1000.00, 160.00, 1160.00),
+('COT002', 2, 2, 'Cotizaci贸n de suministros de limpieza', 0, 500.00, 80.00, 580.00),
+('COT003', 3, 3, 'Cotizaci贸n de materiales de construcci贸n', 0, 2000.00, 320.00, 2320.00);

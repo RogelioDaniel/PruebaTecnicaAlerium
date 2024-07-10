@@ -11,3 +11,4 @@ JOIN
     Pedidos p ON c.idCotizacion = p.idCotizacion
 WHERE 
     p.Estatus = 1;
+

@@ -38,7 +38,8 @@ namespace Alerium.Controllers
                 var existingSupplier = await _context.Proveedores
                     .FirstOrDefaultAsync(s => s.Codigo == proveedores.Codigo);
                 if (existingSupplier != null)
-                {
+                {  ModelState.AddModelError("Codigo", "Ya existe un producto con este código.");
+                    TempData["ErrorMessage"] = "Error: Ya existe un producto con este código.";
                     ModelState.AddModelError("Codigo", "Ya existe un proveedor con este código.");
                     TempData["ErrorMessage"] = "Error: Ya existe un proveedor con este código.";
                     return View(proveedores);
@@ -154,11 +155,13 @@ namespace Alerium.Controllers
             {
                 TempData["ConfirmDelete"] = true;
                 _context.Proveedores.Remove(proveedores);
+                TempData["SuccessMessage"] = "Correcto: Se elimino el proveedor con codigo: " + proveedores.Codigo;
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
             _context.Proveedores.Remove(proveedores);
+            TempData["SuccessMessage"] = "Correcto: Se elimino el proveedor con codigo: " + proveedores.Codigo;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -180,11 +183,22 @@ namespace Alerium.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateProduct([Bind("IdProducto,IdProveedor,Codigo,Descripcion,Unidad,Costo")] Producto product)
         {
+            var existingSupplier = await _context.Productos
+                   .FirstOrDefaultAsync(s => s.Codigo == product.Codigo);
             if (ModelState.IsValid)
             {
+                if (existingSupplier != null)
+                {
+                    ModelState.AddModelError("Codigo", "Ya existe un producto con este código.");
+                    TempData["ErrorMessage"] = "Error: Ya existe un producto con este código.";
+                    return View(product);
+                }
+
                 _context.Add(product);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Correcto: Se creó el producto.";
                 return RedirectToAction("Details", "Proveedores", new { id = product.IdProveedor });
+
             }
             ViewData["IdProveedor"] = new SelectList(_context.Proveedores, "idProveedor", "RazonSocial", product.IdProveedor);
             return View(product);
