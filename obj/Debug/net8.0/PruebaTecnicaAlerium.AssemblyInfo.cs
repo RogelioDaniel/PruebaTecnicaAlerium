@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaTecnicaAlerium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+781a506d06a1f3c446cb4b7a24eb4ad08373892d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c2c46fc21da7b565d014826306c64d51daa12d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaTecnicaAlerium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaTecnicaAlerium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

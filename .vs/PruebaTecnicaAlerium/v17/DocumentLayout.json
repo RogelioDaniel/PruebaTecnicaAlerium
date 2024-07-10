@@ -3,23 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,12 +27,27 @@
       "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\proveedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\proveedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFCAAF0F-8DC5-4DF1-B3D1-AF7DB5BFF05B}|PruebaTecnicaAlerium.csproj|c:\\users\\rogelio\\documents\\github\\pruebatecnicaalerium\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,121 +65,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProveedoresController.cs",
-              "DocumentMoniker": "C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
-              "ToolTip": "C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs [Solo lectura]",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAewF0AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:59:07.86Z",
-              "EditorCaption": " [Solo lectura]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Proveedores\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Proveedores\\Edit.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T05:52:23.792Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Proveedores\\Index.cshtml",
-              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Index.cshtml",
-              "RelativeToolTip": "Views\\Proveedores\\Index.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAwCEAAAAYAAAA",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedores\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Proveedores\\Delete.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T04:37:40.927Z"
+              "WhenOpened": "2024-07-10T07:54:15.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Producto.cs",
-              "RelativeToolTip": "Models\\Producto.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAABHAAAA",
+              "DocumentIndex": 7,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Models\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Proveedor.cs",
+              "RelativeToolTip": "Models\\Proveedor.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T04:32:50.419Z"
+              "WhenOpened": "2024-07-10T07:53:50.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ProveedoresController.cs",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Controllers\\ProveedoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProveedoresController.cs",
               "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Controllers\\ProveedoresController.cs",
               "RelativeToolTip": "Controllers\\ProveedoresController.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAuwGoAAAAAAAAA",
+              "ViewState": "AQIAANoAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T04:25:54.48Z",
+              "WhenOpened": "2024-07-10T07:53:34.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Controllers\\ProductosController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T07:53:29.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProveedoresController.cs",
+              "DocumentMoniker": "C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
+              "ToolTip": "C:\\Users\\rogelio\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\df5810a0d80abe9e9b7ac79829b8026474ff25c5ad48c6bb8ca61cee3f4f4803\\Controllers\\ProveedoresController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAewGkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T05:59:07.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedores\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Proveedores\\Edit.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T05:52:23.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Proveedores\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Index.cshtml",
+              "RelativeToolTip": "Views\\Proveedores\\Index.cshtml",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAFYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T04:37:40.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Models\\Producto.cs",
+              "RelativeToolTip": "Models\\Producto.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T04:32:50.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CreateProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\CreateProduct.cshtml",
               "RelativeDocumentMoniker": "Views\\Proveedores\\CreateProduct.cshtml",
               "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\CreateProduct.cshtml",
               "RelativeToolTip": "Views\\Proveedores\\CreateProduct.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAAYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T04:16:07.845Z"
+              "WhenOpened": "2024-07-10T04:16:07.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Proveedores\\Details.cshtml",
               "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Details.cshtml",
               "RelativeToolTip": "Views\\Proveedores\\Details.cshtml",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAHIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T03:10:55.084Z"
+              "WhenOpened": "2024-07-10T03:10:55.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Proveedores\\Create.cshtml",
               "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Proveedores\\Create.cshtml",
               "RelativeToolTip": "Views\\Proveedores\\Create.cshtml",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAmwFAAAABdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T01:41:26.098Z"
+              "WhenOpened": "2024-07-10T01:41:26.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Productos\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Productos\\Details.cshtml",
               "ToolTip": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Views\\Productos\\Details.cshtml",
               "RelativeToolTip": "Views\\Productos\\Details.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACIAAAAyAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T00:53:32.39Z"
+              "WhenOpened": "2024-07-10T00:53:32.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -179,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\rogelio\\Documents\\Github\\PruebaTecnicaAlerium\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
