@@ -1,0 +1,90 @@
+﻿@model PruebaTecnicaAlerium.Models.Producto
+
+@{
+    ViewData["Title"] = "Crear Producto";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h4 {
+            color: #343a40;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .btn-create {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-container">
+        <h1>Crear Producto</h1>
+
+        <h4>Producto</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="CreateProduct">
+                    <input type="hidden" asp-for="IdProveedor" />
+                    <div class="form-group">
+                        <label asp-for="Codigo" class="control-label"></label>
+                        <input asp-for="Codigo" class="form-control" />
+                        <span asp-validation-for="Codigo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Descripcion" class="control-label"></label>
+                        <input asp-for="Descripcion" class="form-control" />
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Unidad" class="control-label"></label>
+                        <input asp-for="Unidad" class="form-control" />
+                        <span asp-validation-for="Unidad" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Costo" class="control-label"></label>
+                        <input asp-for="Costo" class="form-control" />
+                        <span asp-validation-for="Costo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Crear" class="btn btn-create" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

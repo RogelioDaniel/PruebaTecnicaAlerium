@@ -1,0 +1,90 @@
+﻿@model PruebaTecnicaAlerium.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Editar Proveedor";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h4 {
+            color: #343a40;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-save {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-back {
+            background-color: #6c757d;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-container">
+        <h1>Editar Proveedor</h1>
+        <hr />
+        <div class="row">
+            <div class="col-md-8">
+                <form asp-action="Edit">
+                    <input type="hidden" asp-for="idProveedor" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Codigo" class="control-label"></label>
+                        <input asp-for="Codigo" class="form-control" />
+                        <span asp-validation-for="Codigo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RazonSocial" class="control-label"></label>
+                        <input asp-for="RazonSocial" class="form-control" />
+                        <span asp-validation-for="RazonSocial" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RFC" class="control-label"></label>
+                        <input asp-for="RFC" class="form-control" />
+                        <span asp-validation-for="RFC" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn btn-save" />
+                    </div>
+                </form>
+                <a asp-action="Index" class="btn btn-back">Volver a la Lista</a>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

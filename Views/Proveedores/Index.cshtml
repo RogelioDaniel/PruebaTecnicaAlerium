@@ -1,0 +1,130 @@
+﻿@model IEnumerable<PruebaTecnicaAlerium.Models.Proveedor>
+
+@{
+    ViewData["Title"] = "Lista de Proveedores";
+    var successMessage = TempData["SuccessMessage"] as string;
+    var errorMessage = TempData["ErrorMessage"] as string;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .table {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .table th, .table td {
+                text-align: center;
+                vertical-align: middle;
+            }
+
+        .btn-create {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            color: white;
+        }
+
+        .btn-details {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Proveedores</h1>
+        <p>
+            <a asp-action="Create" class="btn btn-create btn-lg">Crear Nuevo Proveedor</a>
+        </p>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Código</th>
+                    <th>Razón Social</th>
+                    <th>RFC</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.RazonSocial)</td>
+                        <td>@Html.DisplayFor(modelItem => item.RFC)</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.idProveedor" class="btn btn-edit btn-sm">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.idProveedor" class="btn btn-details btn-sm">Detalles</a>
+                            <a asp-action="Delete" asp-route-id="@item.idProveedor" class="btn btn-delete btn-sm">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var successMessage = '@successMessage';
+            var errorMessage = '@errorMessage';
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            if (successMessage) {
+                toastr.success(successMessage);
+            }
+        });
+    </script>
+</body>
+</html>

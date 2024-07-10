@@ -1,0 +1,105 @@
+﻿@model PruebaTecnicaAlerium.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Detalles del Proveedor";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h4 {
+            color: #343a40;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .btn-add-product {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-edit, .btn-back {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-back {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-container">
+        <h1>Detalles del Proveedor</h1>
+
+        <div>
+            <h4>Proveedor</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-4">Código</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Codigo)</dd>
+                <dt class="col-sm-4">Razón Social</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.RazonSocial)</dd>
+                <dt class="col-sm-4">RFC</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.RFC)</dd>
+            </dl>
+        </div>
+
+        <h4>Productos Asociados</h4>
+        <p>
+            <a asp-action="CreateProduct" asp-route-idProveedor="@Model.idProveedor" class="btn btn-add-product">Agregar Producto</a>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Unidad</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Productos)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Unidad)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Costo)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.idProveedor" class="btn btn-edit">Editar</a> |
+            <a asp-action="Index" class="btn btn-back">Regresar</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

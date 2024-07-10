@@ -1,0 +1,42 @@
+﻿@model PruebaTecnicaAlerium.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Unidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-id="@Model.IdProveedor">Back to Products</a>
+</div>
