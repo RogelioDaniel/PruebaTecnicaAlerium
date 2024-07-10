@@ -38,10 +38,9 @@ namespace Alerium.Controllers
                 var existingSupplier = await _context.Proveedores
                     .FirstOrDefaultAsync(s => s.Codigo == proveedores.Codigo);
                 if (existingSupplier != null)
-                {  ModelState.AddModelError("Codigo", "Ya existe un producto con este código.");
+                {  
+                    ModelState.AddModelError("Codigo", "Ya existe un producto con este código.");
                     TempData["ErrorMessage"] = "Error: Ya existe un producto con este código.";
-                    ModelState.AddModelError("Codigo", "Ya existe un proveedor con este código.");
-                    TempData["ErrorMessage"] = "Error: Ya existe un proveedor con este código.";
                     return View(proveedores);
                 }
 
@@ -86,36 +85,41 @@ namespace Alerium.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            try
             {
-                try
-                {
-                    // Validar el RFC usando expresión regular
-                    if (!System.Text.RegularExpressions.Regex.IsMatch(proveedores.RFC, @"^[A-Z]{4}\d{6}[A-Z]\d{2}$"))
-                    {
-                        ModelState.AddModelError("RFC", "El RFC debe tener el formato de 13 caracteres (4 letras + 6 dígitos + 1 letra + 2 dígitos).");
-                        TempData["ErrorMessage"] = "Error: El RFC debe tener el formato correcto.";
-                        return View(proveedores);
-                    }
+                // Verificar si ya existe otro proveedor con el mismo código
+                var existingSupplier = await _context.Proveedores.FirstOrDefaultAsync(s => s.Codigo == proveedores.Codigo && s.idProveedor != proveedores.idProveedor);
 
-                    _context.Update(proveedores);
-                    await _context.SaveChangesAsync();
-                    TempData["SuccessMessage"] = "Proveedor actualizado exitosamente.";
-                    return RedirectToAction(nameof(Index));
-                }
-                catch (DbUpdateConcurrencyException)
+                if (existingSupplier != null)
                 {
-                    if (!ProveedorExists(proveedores.idProveedor))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ModelState.AddModelError("Codigo", "Ya existe un proveedor con este código.");
+                    TempData["ErrorMessage"] = "Error: Ya existe un proveedor con este código.";
+                    return View(proveedores);
                 }
+
+                // Validar el RFC utilizando expresión regular
+                if (!System.Text.RegularExpressions.Regex.IsMatch(proveedores.RFC, @"^[A-Z]{4}\d{6}[A-Z]\d{2}$"))
+                {
+                    ModelState.AddModelError("RFC", "El RFC debe tener el formato de 13 caracteres (4 letras + 6 dígitos + 1 letra + 2 dígitos).");
+                    TempData["ErrorMessage"] = "Error: El RFC debe tener el formato correcto.";
+                    return View(proveedores);
+                }
+
+                _context.Update(proveedores);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Proveedor actualizado exitosamente.";
+                return RedirectToAction(nameof(Index));
             }
-            return View(proveedores);
+            catch (DbUpdateConcurrencyException)
+            {
+                TempData["ErrorMessage"] = "Error: No se pudo actualizar el proveedor debido a un problema de concurrencia.";
+                return View(proveedores);
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Error: {ex.Message}";
+                return View(proveedores);
+            }
         }
 
 
